@@ -1,0 +1,97 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #009961;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00cc81;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+#header.header-scrolled, #header.header-inner-pages {
+  background: rgba(40, 40, 40, 0.9);
+}
+@media (max-width: 992px) {
+  #header {
+    border: 0;
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .get-started-btn {
+    margin: 0 15px 0 0;
+    padding: 6px 18px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/hero-bg.jpg") top center;
+  background-size: cover;
+  position: relative;
+}
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#hero .container {
+  padding-top: 72px;
+  position: relative;
+  text-align: center;
+}
+#hero h1 {
+  margin: 0 0 10px 10;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 66px;
+  color: #fff;
+}
+#hero h2 {
+  color: #eee;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+.btn-round{
+
+  height: 40px;
+  width: 150px;
+  margin-top: 10px;
+  border-radius: 40px !important;
+}
+
+.cards-container{
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+
+.card_h2{
+  text-align: center;
+}

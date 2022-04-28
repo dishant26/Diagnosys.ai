@@ -1,0 +1,84 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+  }
+  
+  a {
+    color: #009961;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #00cc81;
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+  }
+  
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+    transition: all 0.5s;
+    z-index: 997;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  #header.header-scrolled, #header.header-inner-pages {
+    background: rgba(40, 40, 40, 0.9);
+  }
+  @media (max-width: 992px) {
+    #header {
+      border: 0;
+      padding: 15px 0;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .get-started-btn {
+      margin: 0 15px 0 0;
+      padding: 6px 18px;
+    }
+  }
+
+
+/* #eye_result{
+    width: 100%;
+    height: 100vh;
+    background: url("../img/eye_result.jpg") top center;
+    background-size: cover;
+    position: relative;
+  } */
+  #eye_result:before {
+    content: "";
+    /* background: rgba(0, 0, 0, 0.6); */
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  #eye_result.container {
+    padding-top: 72px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .resizedImg{
+    display: block;
+    height: 60%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+  }
+
+  .prediction {
+      padding-top: 25px;
+      color: #000;
+      font-family: "Open Sans", sans-serif;
+      font-size: 2rem;
+      font-weight: 400;
+      text-align: center;
+  }
